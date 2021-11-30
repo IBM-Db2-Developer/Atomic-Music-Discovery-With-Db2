@@ -9,17 +9,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 - Interface with Db2 REST through Swift and Go
 - Implement Shazam’s original “Audio Fingerprinting” logic from 2001
 
-## Flow
-
-1. Create a Db2 Warehouse on Cloud service on IBM Cloud.
-2. Setup tables to store audio fingerprints and file information.
-3. Deploy Db2 REST & setup the query service.
-4. Download a corpus of songs for Atomic to recognize from.
-5. Extract fingerprints from the corpus using the Go implementation of Atomic, and upload those fingerprints to Db2 through Db2 REST.
-6. User records a snippet of audio from the iOS app.
-7. The iOS app extracts fingerprints from the snippet, uploads it to Db2 through Db2 REST, and executes the query service.
-8. The query service gives the iOS app the information it needs to surface the match in the UI.
-
 ## Prerequisites
 
 The following are prerequisites to deploy this application:
@@ -32,11 +21,14 @@ The following are prerequisites to deploy this application:
 ## Steps
 
 1. Create a Db2 Warehouse on Cloud instance
-2. Setup tables in Db2
-3. Deploy Db2 REST
-4. Download a corpus of songs
-5. Ingesting the corpus of songs
-6. Make queries!
+1. Setup IBM Cloud CLI and Container Registry
+1. Deploy Db2 REST
+1. Grab your Db2 Warehouse on Cloud credentials 
+1. Setup tables in db2
+1. Setup query service in Db2 REST
+1. Download a corpus of songs
+1. Ingest the corpus of songs
+1. Make queries!
 
 ### Create a Db2 Warehouse on Cloud instance
 
@@ -64,7 +56,7 @@ When you head back to your dashboard, you should see that the instance you creat
 
 This may take a few minutes, but eventually your instance should be "Active". Then, you’re ready to move on to the next step!
 
-### Setup IBM Cloud Container Registry
+### Setup IBM Cloud CLI and Container Registry
 
 This code pattern will make use of certain docker images only available on the IBM Cloud Container Registry. In order to access them, follow [these steps](https://cloud.ibm.com/docs/cli?topic=cli-getting-started) to setup the IBM Cloud CLI on your machine. Follow steps 1-3, and note that you will not need to access cloud foundry services for this code pattern.
 
@@ -95,7 +87,7 @@ docker run -it --name=db2rest -p 50050:50050 -e LICENSE=accept -e DB2REST_USE_HT
 
 Now, you should be able to access Db2 REST at port 50050, and you can access documentation at `http://<IP>:50050/docs`. Make sure that you deploy Db2 REST to a machine that you can access via network from where you will deploy the Atomic application. If you’re running this locally and cannot connect to your machine with a public IP address, feel free to tunnel your connection using a service like [ngrok](https://ngrok.io).
 
-### Grabbing your Db2 Warehouse on Cloud credentials
+### Grab your Db2 Warehouse on Cloud credentials
 
 To get the information you need to connect to your Db2 Warehouse on Cloud instance, simply click on the “Credentials” tab on the left:
 
@@ -218,7 +210,7 @@ for i in *.m4a; do ffmpeg -i $i "$i".wav; done
 
 Now you’re ready to ingest the corpus!
 
-### Ingesting the corpus of songs
+### Ingest the corpus of songs
 
 NOTE — A prerequisite for this section is that you download, configure, make, and install the "FFTW" (Fastest Fourier Transform in the West) library, version 3. Also ensure that during configuration/making, you export the following environment variables to ensure the next steps work properly:
 
@@ -276,7 +268,7 @@ Once you run the code, you should start to see output that looks like this:
 
 Every audio file that’s printed this way is another one that’s been uploaded to Db2. In a few minutes, you should be finished loading in your data!
 
-### Making queries!
+### Make queries!
 
 It’s finally time — you’ve got Db2 REST and Db2 setup, you’ve downloaded your corpus, and you’ve ingested that corpus into your database. You can get started making queries.
 
