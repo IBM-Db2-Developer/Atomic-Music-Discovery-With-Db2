@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0183923E26E9D370005377CD /* AtomicStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183923D26E9D370005377CD /* AtomicStream.swift */; };
+		01992B8526E57B46007101E7 /* AtomicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B8426E57B46007101E7 /* AtomicApp.swift */; };
+		01992B8726E57B46007101E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B8626E57B46007101E7 /* ContentView.swift */; };
+		01992B8926E57B48007101E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01992B8826E57B48007101E7 /* Assets.xcassets */; };
+		01992B8C26E57B48007101E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01992B8B26E57B48007101E7 /* Preview Assets.xcassets */; };
+		01992B9326E5C1BB007101E7 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9226E5C1BB007101E7 /* AudioRecorder.swift */; };
+		01992B9526E5DF24007101E7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9426E5DF24007101E7 /* Utilities.swift */; };
+		01992B9826E5E898007101E7 /* Db2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9726E5E898007101E7 /* Db2Handler.swift */; };
+		01992B9A26E5EACF007101E7 /* AtomicCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9926E5EACF007101E7 /* AtomicCore.swift */; };
+		01992BA026E5EBBC007101E7 /* FFTHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9C26E5EBBC007101E7 /* FFTHandler.c */; };
+		01992BA126E5EBBC007101E7 /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 01992B9D26E5EBBC007101E7 /* Utils.c */; };
+		01992BA626E5F03F007101E7 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01992BA526E5F03F007101E7 /* libfftw3.a */; };
+		01992BA826E5F183007101E7 /* MaxFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 01992BA726E5F183007101E7 /* MaxFilter.metal */; };
+		01992BAA26E5F28B007101E7 /* AtomicCore+Db2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01992BA926E5F28B007101E7 /* AtomicCore+Db2Handler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0183923D26E9D370005377CD /* AtomicStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicStream.swift; sourceTree = "<group>"; };
+		01992B8126E57B46007101E7 /* Atomic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atomic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01992B8426E57B46007101E7 /* AtomicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicApp.swift; sourceTree = "<group>"; };
+		01992B8626E57B46007101E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01992B8826E57B48007101E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01992B8B26E57B48007101E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01992B9226E5C1BB007101E7 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		01992B9426E5DF24007101E7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		01992B9626E5E3AD007101E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		01992B9726E5E898007101E7 /* Db2Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Db2Handler.swift; sourceTree = "<group>"; };
+		01992B9926E5EACF007101E7 /* AtomicCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicCore.swift; sourceTree = "<group>"; };
+		01992B9B26E5EBBB007101E7 /* Atomic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Atomic-Bridging-Header.h"; sourceTree = "<group>"; };
+		01992B9C26E5EBBC007101E7 /* FFTHandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FFTHandler.c; sourceTree = "<group>"; };
+		01992B9D26E5EBBC007101E7 /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
+		01992B9E26E5EBBC007101E7 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		01992B9F26E5EBBC007101E7 /* FFTHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHandler.h; sourceTree = "<group>"; };
+		01992BA226E5EE03007101E7 /* fftw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fftw3.h; sourceTree = "<group>"; };
+		01992BA526E5F03F007101E7 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfftw3.a; sourceTree = "<group>"; };
+		01992BA726E5F183007101E7 /* MaxFilter.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MaxFilter.metal; sourceTree = "<group>"; };
+		01992BA926E5F28B007101E7 /* AtomicCore+Db2Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AtomicCore+Db2Handler.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01992B7E26E57B46007101E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01992BA626E5F03F007101E7 /* libfftw3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01992B7826E57B46007101E7 = {
+			isa = PBXGroup;
+			children = (
+				01992B8326E57B46007101E7 /* Atomic */,
+				01992B8226E57B46007101E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01992B8226E57B46007101E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01992B8126E57B46007101E7 /* Atomic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01992B8326E57B46007101E7 /* Atomic */ = {
+			isa = PBXGroup;
+			children = (
+				01992B9626E5E3AD007101E7 /* Info.plist */,
+				01992B8426E57B46007101E7 /* AtomicApp.swift */,
+				01992B9426E5DF24007101E7 /* Utilities.swift */,
+				01992BA526E5F03F007101E7 /* libfftw3.a */,
+				01992BA226E5EE03007101E7 /* fftw3.h */,
+				01992B9C26E5EBBC007101E7 /* FFTHandler.c */,
+				01992B9F26E5EBBC007101E7 /* FFTHandler.h */,
+				01992B9D26E5EBBC007101E7 /* Utils.c */,
+				01992B9E26E5EBBC007101E7 /* Utils.h */,
+				01992B9B26E5EBBB007101E7 /* Atomic-Bridging-Header.h */,
+				01992BA726E5F183007101E7 /* MaxFilter.metal */,
+				01992B9926E5EACF007101E7 /* AtomicCore.swift */,
+				01992B9726E5E898007101E7 /* Db2Handler.swift */,
+				01992BA926E5F28B007101E7 /* AtomicCore+Db2Handler.swift */,
+				01992B9226E5C1BB007101E7 /* AudioRecorder.swift */,
+				0183923D26E9D370005377CD /* AtomicStream.swift */,
+				01992B8626E57B46007101E7 /* ContentView.swift */,
+				01992B8826E57B48007101E7 /* Assets.xcassets */,
+				01992B8A26E57B48007101E7 /* Preview Content */,
+			);
+			path = Atomic;
+			sourceTree = "<group>";
+		};
+		01992B8A26E57B48007101E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01992B8B26E57B48007101E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01992B8026E57B46007101E7 /* Atomic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01992B8F26E57B48007101E7 /* Build configuration list for PBXNativeTarget "Atomic" */;
+			buildPhases = (
+				01992B7D26E57B46007101E7 /* Sources */,
+				01992B7E26E57B46007101E7 /* Frameworks */,
+				01992B7F26E57B46007101E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atomic;
+			productName = Atomic;
+			productReference = 01992B8126E57B46007101E7 /* Atomic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01992B7926E57B46007101E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					01992B8026E57B46007101E7 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = 01992B7C26E57B46007101E7 /* Build configuration list for PBXProject "Atomic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01992B7826E57B46007101E7;
+			productRefGroup = 01992B8226E57B46007101E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01992B8026E57B46007101E7 /* Atomic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01992B7F26E57B46007101E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01992B8C26E57B48007101E7 /* Preview Assets.xcassets in Resources */,
+				01992B8926E57B48007101E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01992B7D26E57B46007101E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01992B9326E5C1BB007101E7 /* AudioRecorder.swift in Sources */,
+				01992BA126E5EBBC007101E7 /* Utils.c in Sources */,
+				01992B8726E57B46007101E7 /* ContentView.swift in Sources */,
+				01992BAA26E5F28B007101E7 /* AtomicCore+Db2Handler.swift in Sources */,
+				01992BA826E5F183007101E7 /* MaxFilter.metal in Sources */,
+				01992B9526E5DF24007101E7 /* Utilities.swift in Sources */,
+				01992B9A26E5EACF007101E7 /* AtomicCore.swift in Sources */,
+				01992BA026E5EBBC007101E7 /* FFTHandler.c in Sources */,
+				01992B8526E57B46007101E7 /* AtomicApp.swift in Sources */,
+				01992B9826E5E898007101E7 /* Db2Handler.swift in Sources */,
+				0183923E26E9D370005377CD /* AtomicStream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01992B8D26E57B48007101E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01992B8E26E57B48007101E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01992B9026E57B48007101E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Atomic/Preview Content\"";
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atomic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Atomic",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.Atomic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Atomic/Atomic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01992B9126E57B48007101E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Atomic/Preview Content\"";
+				DEVELOPMENT_TEAM = 998XWVFVMR;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Atomic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Atomic",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TBSS.Atomic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Atomic/Atomic-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01992B7C26E57B46007101E7 /* Build configuration list for PBXProject "Atomic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01992B8D26E57B48007101E7 /* Debug */,
+				01992B8E26E57B48007101E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01992B8F26E57B48007101E7 /* Build configuration list for PBXNativeTarget "Atomic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01992B9026E57B48007101E7 /* Debug */,
+				01992B9126E57B48007101E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01992B7926E57B46007101E7 /* Project object */;
+}
