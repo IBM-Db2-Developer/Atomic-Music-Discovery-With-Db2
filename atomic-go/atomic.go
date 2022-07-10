@@ -1,6 +1,6 @@
 package main
 
-// #cgo LDFLAGS: -L. -lffthandler -lm
+// #cgo LDFLAGS: -L. -lffthandler -lm -L/usr/local/lib -lfftw3
 // #include "FFTHandler.h"
 import "C"
 import (
